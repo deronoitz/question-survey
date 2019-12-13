@@ -39,15 +39,17 @@ export default class MyApp extends App {
               padding: 12px 30px;
               border: none;
               border-radius: 7px;
-              background-color: #0070f3;
-              box-shadow: 0 4px 14px 0 rgba(0,118,255,0.39);
+              font-size: 16px;
+              font-weight: 500;
+              background-color: var(--primary-color);
+              box-shadow: 0 4px 14px 0 rgb(43, 193, 188);
               color: white;
               cursor: pointer;
-              margin: 10px
+              transition: .2s ease;
             }
             button:hover {
-              background: rgba(0,118,255,0.9);
-              box-shadow: 0 6px 20px rgba(0,118,255,0.23);
+              background: rgb(0, 175, 169);
+              box-shadow: 0 4px 14px 0 rgb(43, 193, 188);
             }
             .centered {
               display: flex;
@@ -125,6 +127,9 @@ export default class MyApp extends App {
               text-align: center;
               transition: .2s ease;
             }
+            .inputBox:hover .stylerRadio, .checkBox:hover .stylerCheckbox {
+              background: #fff
+            }
             .inputBox.checkbox {
               flex-direction: column;
               align-items: flex-start;
@@ -154,7 +159,7 @@ export default class MyApp extends App {
               border: none;
               border-bottom: solid 2px var(--primary-color);
               outline: none;
-              color: var(--primary-color);
+              color: #555;
               font-weight: 400;
             }
           `}

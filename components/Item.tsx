@@ -19,12 +19,17 @@ const Input = (props: any) => {
     )
   } else if (props.type === 'input') {
     return (
+      <>
       <div className="inputBox">
         <textarea name={props.number} placeholder="Type your answer here..."></textarea>
       </div>
+      <br/>
+      <button className="btn">Lanjut</button>
+      </>
     )
   } else if (props.type === 'checkbox'){
     return (
+      <>
       <div className="inputBox checkbox">
           {
           props.checkOption.map((i, index) => (
@@ -37,6 +42,9 @@ const Input = (props: any) => {
           ))
           }
       </div>
+      <br/>
+      <button className="btn">Lanjut</button>
+      </>
     )
   }
   return null
